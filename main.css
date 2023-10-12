@@ -3,5 +3,6 @@ body {
     background-color: antiquewhite;
 }
 img {
-    width: 400px
+    width: 400px;
+    height: auto
 }
