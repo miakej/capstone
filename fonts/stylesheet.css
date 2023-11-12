@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Just Saying';
+    src: url('JustSayingBold.eot');
+    src: url('JustSayingBold.eot?#iefix') format('embedded-opentype'),
+        url('JustSayingBold.woff2') format('woff2'),
+        url('JustSayingBold.woff') format('woff'),
+        url('JustSayingBold.ttf') format('truetype'),
+        url('JustSayingBold.svg#JustSayingBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Just Saying';
+    src: url('JustSaying-Regular.eot');
+    src: url('JustSaying-Regular.eot?#iefix') format('embedded-opentype'),
+        url('JustSaying-Regular.woff2') format('woff2'),
+        url('JustSaying-Regular.woff') format('woff'),
+        url('JustSaying-Regular.ttf') format('truetype'),
+        url('JustSaying-Regular.svg#JustSaying-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Just Saying';
+    src: url('JustSayingLight-Regular.eot');
+    src: url('JustSayingLight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('JustSayingLight-Regular.woff2') format('woff2'),
+        url('JustSayingLight-Regular.woff') format('woff'),
+        url('JustSayingLight-Regular.ttf') format('truetype'),
+        url('JustSayingLight-Regular.svg#JustSayingLight-Regular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Just Saying Dings';
+    src: url('JustSayingDings-Regular.eot');
+    src: url('JustSayingDings-Regular.eot?#iefix') format('embedded-opentype'),
+        url('JustSayingDings-Regular.woff2') format('woff2'),
+        url('JustSayingDings-Regular.woff') format('woff'),
+        url('JustSayingDings-Regular.ttf') format('truetype'),
+        url('JustSayingDings-Regular.svg#JustSayingDings-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

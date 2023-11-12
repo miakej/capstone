@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --black: #000;
+    --red: #E63425;
+    --lt-red: #EED3C8;
+    --gold: #D9A328;
+    --lt-gold: #DFC297;
+    --blue: #1A86C8;
+    --ltblue: #C6DAE1;
+    --white: #fff;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+@font-face {
+    font-family: 'JustSaying';
+    src: url('fonts/JustSayingBold.eot');
+    src: url('fonts/JustSayingBold.woff2') format('woff2'),
+        url('fonts/JustSayingBold.woff') format('woff'),
+        url('fonts/JustSayingBold.ttf') format('truetype'),
+        url('fonts/JustSayingBold.svg#svgJustSaying') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2 {
+    font-family: JustSaying, Helvetica;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 18rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--red);
+    font-size: 1rem;
+}
+
+a:hover {
+    color: var(--gold)
+}
+
+/* Header */
+#navlogo {
+    height: 60px;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+  height: 100vh;
+  background-image: url("img/hayden.JPG"); 
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links {
+    display: flex;
+    gap:2rem 
+}
+
+/* Hero */
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--black);
+}
+
+/* Problem Statement */
+
+.statement {
+    background-color: var(--white);
+    padding: 2rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [end];
+    grid-template-rows: [top] auto [mid] auto [bottom];
+    gap:3rem 1rem;
+}
+
+.problem {
+    grid-column: col1 / span 2;
+    grid-row: top / mid;
+}
+
+.solution {
+    grid-column: col2 / span end;
+    grid-row: mid / bottom;
+    justify-self: end;
+}
