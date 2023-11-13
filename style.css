@@ -6,14 +6,16 @@
 }
 
 :root {
-    --black: #000;
-    --red: #E63425;
-    --lt-red: #EED3C8;
-    --gold: #D9A328;
-    --lt-gold: #DFC297;
+    --blackroom: #201D1E;
+    --darkroom: #A7A4A1;
+    --redeye: #DB4737;
+    --lt-redeye: #EED3C8;
+    --flash: #BD8B2C;
+    --lt-flash: #D2B784;
+    --darksepia: #E5DCCB;
+    --lt-sepia: #EEE8E0;
     --blue: #1A86C8;
     --ltblue: #C6DAE1;
-    --white: #fff;
 }
 
 body {
@@ -48,6 +50,7 @@ h1{
 h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: var(--redeye)
 }
 
 li {
@@ -56,12 +59,12 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--red);
+    color: var(--redeye);
     font-size: 1rem;
 }
 
 a:hover {
-    color: var(--gold)
+    color: var(--flash)
 }
 
 /* Header */
@@ -99,28 +102,44 @@ section#hero{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--black);
+    color: var(--blackroom);
 }
 
 /* Problem Statement */
 
 .statement {
-    background-color: var(--white);
-    padding: 2rem;
+    background-color: var(--lt-sepia);
+    padding: 5rem 2rem;
     overflow: hidden;
     display: grid;
-    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [end];
-    grid-template-rows: [top] auto [mid] auto [bottom];
-    gap:3rem 1rem;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [end];
+    grid-template-rows: [top] auto [middle] auto [bottom];
+    gap:3rem 2rem;
+    color: var(--blackroom);
 }
 
-.problem {
+.problem-content {
     grid-column: col1 / span 2;
-    grid-row: top / mid;
+    grid-row: top / middle;
 }
 
-.solution {
-    grid-column: col2 / span end;
-    grid-row: mid / bottom;
+.problem-image{
+    grid-column: col3 / span end;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.solution-image{
+    grid-column: col1 / span 2;
+    grid-row: middle / bottom;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.solution-content {
+    grid-column: col3 / span end;
+    grid-row: middle / bottom;
     justify-self: end;
 }
