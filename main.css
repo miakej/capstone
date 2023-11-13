@@ -21,7 +21,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--flash);
+    background: var(--lt-sepia);
     color: var(--blackroom);
   }
 
@@ -38,22 +38,26 @@ body {
         font-display: swap;
     }
 
-    h1, h2 {
+    h1, h2, h3 {
         font-family: 'JustSaying', Helvetica;
         text-transform: uppercase;
+        line-height: 0.8em;
     }
 
     h1{
         font-size: 4rem;
         margin-top: 1rem;
         text-align: center;
-        line-height: 0.8;
     }
 
     h2 {
         font-size: 4rem;
         margin-bottom: 1rem;
         color: var(--blackroom)
+    }
+
+    h3 {
+      font-size: 2rem;
     }
 
     em {
@@ -75,7 +79,7 @@ body {
     a:hover {
         color: var(--flash)
     }
-  
+
 
 /* Header */
     #navlogo { 
@@ -90,7 +94,8 @@ body {
     }
 
     .navbar {
-        position: fixed;
+        position: absolute;
+        top: 0;
         width: 100%;
         height: 80px;
         display: flex;
@@ -121,6 +126,7 @@ body {
   .filmprints {
     overflow: hidden;
     height: 100vh;
+    background-color: var(--flash);
   }
   
   .horizontal-scroll-wrapper {
@@ -247,7 +253,7 @@ body {
 
 .deliverables-content {
     grid-column: 1 / 14;
-    background-color: var(--lt-sepia);
+    background-color: var(--lt-redeye);
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -258,6 +264,35 @@ body {
     object-fit: cover;
     filter: none;
     border-radius: 1rem;
+}
+
+.deliverables__item {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+  color: var(--blackroom);
+  text-align: center;
+  padding: 20px;
+}
+
+.deliverables__item:hover .overlay {
+  opacity: 1;
 }
 
 .deliverables__item--1 {
