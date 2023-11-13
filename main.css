@@ -56,6 +56,12 @@ body {
         color: var(--blackroom)
     }
 
+    em {
+      font-size: 1.5rem;
+      font-weight: lighter;
+      font-style: normal;
+    }
+
     li {
         list-style: none;
     }
@@ -192,7 +198,7 @@ body {
     overflow: hidden;
     display: grid;
     grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [end];
-    grid-template-rows: [top] auto [middle] auto [bottom];
+    grid-template-rows: [top] 400px [middle] 400px [bottom];
     gap:3rem 2rem;
     color: var(--blackroom);
 }
