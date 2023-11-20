@@ -124,6 +124,7 @@ body {
 
 /* Gallery */
   .filmprints {
+    padding-top: 4rem;
     overflow: hidden;
     height: 100vh;
     background-color: var(--flash);
@@ -189,7 +190,7 @@ body {
     max-height: 50vh;
     transition: .5s;
     vertical-align: top;
-    filter: saturate(50%) sepia(30%);
+    filter: saturate(75%) sepia(30%);
     border-radius: 1rem;
   }
 
