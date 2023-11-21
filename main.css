@@ -61,9 +61,10 @@ body {
     }
 
     em {
-      font-size: 1.5rem;
-      font-weight: lighter;
+      font-size: 2rem;
       font-style: normal;
+      font-family: 'JustSaying', Helvetica;
+      text-transform: uppercase;
     }
 
     li {
@@ -77,8 +78,14 @@ body {
     }
 
     a:hover {
-        color: var(--flash)
-    }
+      color: var(--flash);
+  }
+
+  a.active {
+      color: var(--blackroom);
+      background-color: var(--flash);
+      padding: 1rem;
+  }
 
 
 /* Header */
@@ -347,3 +354,59 @@ body {
   display: flex;
   gap:2rem 
 } */
+
+
+/* RESEARCH PAGE */
+
+section.title {
+  background-color: var(--lt-sepia);
+  padding-top: 15rem;
+  min-height: 50vh;
+}
+
+.research--content {
+  background-color: var(--lt-flash);
+  padding: 5rem 2rem;
+  overflow: hidden;
+  color: var(--blackroom);
+  border: medium dashed green;
+}
+
+.research--content--digital {
+  padding: 1rem;
+  background-color: var(--ltblue);
+  width: 100vw;
+}
+.horizontal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0,-100vh,0);
+  transform-origin: right top;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100vw;
+  perspective: 1px;
+  padding-bottom: 10rem;
+}
+
+.quotegallery {
+  background-color: var(--lt-sepia);
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 300px;
+  transform: rotate(90deg);
+  gap: 3rem;
+}
+
+.quote-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.neg {
+  background-color: var(--lt-redeye);
+}
