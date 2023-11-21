@@ -204,38 +204,41 @@ body {
     padding: 5rem 2rem;
     overflow: hidden;
     display: grid;
-    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [end];
-    grid-template-rows: [top] 400px [middle] 400px [bottom];
-    gap:3rem 2rem;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [end];
+    grid-template-rows: [row1] 100px [row2] 100px [row3] 100px [row4] 100px [row5] 100px [bottom];
+    gap:3rem;
     color: var(--blackroom);
 }
 
 .problem-content {
-    grid-column: col1 / span 2;
-    grid-row: top / middle;
+    grid-column: col2 / span 2;
+    grid-row: row1 / row3;
 }
 
 .problem-image{
     background-image: url('img/subway.jpg');
     border-radius: 1rem;
-    grid-column: col3 / span end;
+    grid-column: col4 / span end;
+    grid-row: row1 / row4;
     background-size: cover;
     background-position: center;
     padding: 1vh ;
     box-shadow: 0 10px 50px #5f2f1182;
+    transform: rotate(10deg);
 }
 
 .solution-image{
     grid-column: col1 / span 2;
-    grid-row: middle / bottom;
+    grid-row: row4 / span 3;
     border-radius: 1rem;
     background-size: cover;
     background-position: center;
+    transform: rotate(-10deg);
 }
 
 .solution-content {
-    grid-column: col3 / span end;
-    grid-row: middle / bottom;
+    grid-column: col3 / span 2;
+    grid-row: row4 / bottom;
     justify-self: end;
 }
 
