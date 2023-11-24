@@ -426,3 +426,24 @@ p.page-subhead {
 .pos {
   border: 3px solid var(--flash)
 }
+
+/* PROCESS PAGE */
+
+.process--content--moodboard {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+img.full {
+  max-width: 97vw;
+}
+
+img.half {
+  max-width: 48.5vw;
+  padding: 1rem;
+}
+
+li.bullet {
+  list-style-type: disc;
+  margin: 1rem 3rem;
+}
