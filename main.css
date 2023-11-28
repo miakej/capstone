@@ -471,7 +471,6 @@ li.bullet {
   display: flex;
   align-items: center;
   justify-content: center;
-
   transform-origin: 50% 50%;
   transition: 1s;
   background-color: var(--darksepia);
@@ -647,8 +646,18 @@ h3 {
   .graph-caption {
     content: "";
     clear: both;
-    display: table;
-    max-width: fit-content;
+    /* display: table;
+    max-width: fit-content; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reorder-text {
+    order: 0;
+  }
+
+  .reorder-img {
+    order: 1;
   }
 
   .quote-wrapper {
