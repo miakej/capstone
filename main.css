@@ -429,19 +429,24 @@ p.page-subhead {
 
 /* PROCESS PAGE */
 
-.process--content--moodboard {
+.process--content {
+  width: 100%;
+  margin: 1rem auto;
   padding: 1rem;
+  overflow-x: hidden;
   background-color: #fff;
 }
 
 img.full {
-  width: 97vw;
-  padding: 2rem 0rem;
+  max-width: 97vw;
+  padding: 1rem;
+  border-radius: 3rem;
 }
 
 img.half {
   width: 48.5vw;
-  padding: 2rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 2rem;
 }
 
 img.half-full{
@@ -523,8 +528,8 @@ h3 {
     position: relative; 
   }
 
-  .hero {
-    position: relative;
+  #hero {
+    padding: 2rem;
   }
 
 
@@ -536,7 +541,11 @@ h3 {
     background-color: var(--darksepia);
   }
 
-  .horizontal-scroll-wrapper {
+  .filmprints {
+    max-height: 100%;
+    margin-top: -40%;
+  }
+  /* .horizontal-scroll-wrapper {
     flex-direction: row;
     max-width: 100%;
     transform: none;
@@ -562,7 +571,7 @@ h3 {
   .img-wrapper a {
     padding: 0.5rem;
     margin: 0.5rem;
-  }
+  } */
 
   .overview {
     display: block;
@@ -650,6 +659,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .quotegallery {
@@ -658,6 +668,11 @@ h3 {
   img.half-full {
     width: 100%;
     margin-bottom: 50px;
+  }
+
+  img.half {
+    width: 100%;
+    border-radius: 1rem;
   }
 
 }
