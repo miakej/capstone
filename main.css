@@ -221,14 +221,14 @@ body {
     padding: 5rem 2rem;
     overflow: hidden;
     display: grid;
-    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [end];
-    grid-template-rows: [row1] 100px [row2] 100px [row3] 100px [row4] 100px [row5] 100px [bottom];
-    gap:3rem;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [end];
+    grid-template-rows: [row1] 100px [row2] 100px [row3] 100px [row4] 100px [row5] 100px [row6] 100px [bottom];
+    gap:2rem;
     color: var(--blackroom);
 }
 
 .problem-content {
-    grid-column: col2 / span 2;
+    grid-column: col1 / span 3;
     grid-row: row1 / row3;
 }
 
@@ -240,20 +240,20 @@ body {
     background-position: center;
     padding: 1vh ;
     box-shadow: 0 10px 50px #5f2f1182;
-    transform: rotate(10deg);
+    transform: rotate(5deg);
 }
 
 .solution-image{
-    grid-column: col1 / span 2;
-    grid-row: row4 / span 3;
+    grid-column: col1 / span 3;
+    grid-row: row4 / span bottom;
     border-radius: 1rem;
     background-size: cover;
     background-position: center;
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
 }
 
 .solution-content {
-    grid-column: col3 / span 2;
+    grid-column: col4 / span end;
     grid-row: row4 / bottom;
     justify-self: end;
 }
@@ -529,7 +529,7 @@ img.redirectimg {
 
 @media screen and (max-width: 900px) {
   body {
-    font-size: 16px; /* Adjust font size for better readability on smaller screens */
+    font-size: 16px; 
   }
 
 
