@@ -645,9 +645,11 @@ h3 {
     content: "";
     clear: both;
     max-width: fit-content;
+    max-height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: scroll;
   }
 
   .quotegallery {
